@@ -1,0 +1,26 @@
+\documentclass{beamer}
+
+\begin{document}
+		
+	\begin{frame}
+		\frametitle{Testando overlays}
+		 \begin{columns}
+			\column{.45\linewidth}
+			
+				\begin{figure}
+					\includegraphics[width=\linewidth]{example-image-a}
+					\caption{Legenda global, A.}
+				\end{figure}
+			
+		
+			\column{.45\linewidth}
+				
+				\begin{enumerate}
+					\only<1> {\item<1>[1.] Detalhe 1}
+					\only<2> {\item<2>[2.] Detalhe 2}
+					\only<3> {\item<3>[3.] Detalhe 3}
+				\end{enumerate}
+
+		\end{columns}
+	\end{frame}
+\end{document}
