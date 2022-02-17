@@ -1,0 +1,28 @@
+\documentclass{beamer}
+\usepackage{url}
+\usepackage{verbatim}
+
+\begin{document}
+
+	\begin{frame}<1-2>[label=foo,fragile]
+
+		\textbf{Using} \verb+\againframe+.
+
+		\footnote{Source : {\scriptsize \url{https://stackoverflow.com/questions/64879955/latex-beamer-only-show-subset-of-overlays-in-a-frame}}}
+
+		\vfill
+		\begin{itemize}
+			\item<1-> item 1 % this should appear in frame 1 slide 1 and frame 2 slide 1-2
+			\item<2-> item 2 % this should appear in frame 1 slide 2 and frame 2 slide 1-2
+			\item<3-> item 3 % this should appear in frame 2 slide 1
+			\item<4-> item 4 % this should appear in frame 2 slide 2
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		Some kind of intermediate distraction.
+	\end{frame}
+
+	\againframe<3-4>{foo}
+
+\end{document}
