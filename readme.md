@@ -1,6 +1,6 @@
 # Snip codes compilation
 
-Utilities of LaTeX codes for Beamer presentation compiled from web sources.
+Sample LaTeX  codes for Beamer presentation compiled from web sources.
 
 Each ```.tex``` file contains a minimum working example of the feature noted in filename.
 
